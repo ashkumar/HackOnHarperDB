@@ -1,0 +1,22 @@
+{
+  "name": "harpersensor",
+  "version": "1.0.0",
+  "description": "Sensor inputs to HarperDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HarperDB",
+    "Node.js"
+  ],
+  "author": "Ashwini Kumar",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-http-proxy": "^1.1.0",
+    "guid": "0.0.12",
+    "harperdb-connect": "^1.0.0",
+    "node-datetime": "^2.0.6"
+  }
+}

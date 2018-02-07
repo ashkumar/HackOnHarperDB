@@ -1,0 +1,4 @@
+Bundle-Name: Harper Portlet
+Bundle-SymbolicName: com.pangong.harper.portlet
+Bundle-Version: 1.0.0
+Web-ContextPath: /harper-portlet
