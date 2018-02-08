@@ -68,7 +68,7 @@ io.on('connection', (socket) => {
                           console.log(latestReadings);
                           //Alert by pushing to client if criteria is met
                           if (latestReadings.weight > 150 || latestReadings.bp >150 || latestReadings.sugar > 150){ 
-                            ///  Push to clients using websocket
+                            ///  Push to clients using socket.io
                             let toPush = userid + " : " + JSON.stringify(latestReadings);
                             io.emit('message', { type: 'new-message', text: toPush });
                           ////
