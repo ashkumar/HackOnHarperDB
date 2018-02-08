@@ -7,7 +7,7 @@ var fs = require('fs');
 
 
 const { HarperDBConnect } = require('harperdb-connect')
-const db = new HarperDBConnect('root', 'ash111')
+const db = new HarperDBConnect('root', 'password')
 db.setDefaultOptions({
     method: 'POST',
     headers: {
