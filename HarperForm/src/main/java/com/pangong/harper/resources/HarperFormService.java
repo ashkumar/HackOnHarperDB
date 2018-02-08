@@ -72,8 +72,7 @@ public class HarperFormService implements MVCResourceCommand {
 				sw = insertOrUpdatePatientAttributes(postBody);
 			}
 			
-			System.out.println("Hello" + postBody);
-			System.out.println(sw.toString());
+
 			
 			writer = resourceResponse.getWriter();
 			
