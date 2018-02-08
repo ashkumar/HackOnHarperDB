@@ -1,4 +1,4 @@
-# Harper npm Portlet
+# HarperDB Portlet built using Angular
 This is a Liferay portlet build using Angular.
 It demonstrates client side Angular integration with Liferay.
 Portlet resource URL is passed from the server to the client.  The client can then use this URL to make server side calls.
