@@ -17,7 +17,6 @@ app.use('/proxy', proxy('localhost:9925', {
     objBodyContent['time'] = new Date().getTime();
     bodytoSend['records'] = [objBodyContent];
 
-    console.log(bodytoSend);
 
     return bodytoSend;
   }
