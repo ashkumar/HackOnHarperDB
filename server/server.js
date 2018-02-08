@@ -42,7 +42,7 @@ io.on('connection', (socket) => {
         console.log(`Directory ${path} has been added`);
         fs.readFile(path, 'utf8', function (err, userid) {
           if (err) throw err;
-          console.log(userid);
+          
           //Make a several queries to read bp, sugar and weight from  the database to retrieve results.
           var latestReadings = {};
           db.connect('http://localhost:9925')
@@ -65,7 +65,7 @@ io.on('connection', (socket) => {
                       })
                         .then(res => {
                           latestReadings['weight'] = res[0].reading;
-                          console.log(latestReadings);
+                          
                           //Alert by pushing to client if criteria is met
                           if (latestReadings.weight > 150 || latestReadings.bp >150 || latestReadings.sugar > 150){ 
                             ///  Push to clients using socket.io
