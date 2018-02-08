@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 import { QuestionService } from './form-dynamic/question.service';
 
-export class Hero {
-	id: number;
-	name: string;
-}
+
 
 @Component({
 	template: `
@@ -19,8 +16,5 @@ export class AppComponent {
 	constructor(service: QuestionService) {
 	   this.questions = service.getQuestions();
 	}
-	hero: Hero = {
-		id: 1,
-		name: 'Windstorm',
-	};
+	
 }
