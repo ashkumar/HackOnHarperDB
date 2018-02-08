@@ -43,10 +43,8 @@ export class FormDynamicComponent implements OnInit {
  
   ngOnInit() {
     this.form = this.qcs.toFormGroup(this.questions);
-    console.log(this.form.value.userid);
     this.hdb.getInitialFormValue(this.form.value.userid).subscribe(data => {
       const formVal = JSON.stringify(data);
-      console.log("Form Value " + formVal);
       if (data.length == 1){
         this.form.patchValue(data[0], {onlySelf: true});
       }
